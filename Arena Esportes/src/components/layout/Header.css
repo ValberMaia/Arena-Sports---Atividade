@@ -37,8 +37,12 @@
 .mine-header p,
 .mine-header span {
   margin: 0;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgb(255, 255, 255);
   font-size: 9px;
+}
+
+.mine-header span {
+  color: #D9F36A;
 }
 
 /* Barra branca principal */

@@ -1,0 +1,244 @@
+
+/* Footer principal */
+.footer {
+  width: 100%;
+  background-color: #10372d;
+  color: #c5d2cc;
+  padding: 46px 5% 24px;
+  margin-top: 0;
+
+  /* Não usar position: fixed ou sticky */
+  position: static;
+}
+
+/* Área superior com as quatro colunas */
+.footer-content {
+  width: 100%;
+  max-width: 1105px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 2fr 0.9fr 1.1fr 1.1fr;
+  column-gap: 48px;
+  row-gap: 36px;
+
+  padding-bottom: 32px;
+}
+
+/* Logo e descrição */
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  color: #f5f1e8;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+
+
+.footer-logo p {
+  margin: 18px 0 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #c5d2cc;
+}
+
+/* Títulos das colunas */
+.footer-content h3 {
+  margin: 2px 0 12px;
+
+  color: #f5f1e8;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+/* Links e textos das colunas */
+.footer-arena-inf,
+.footer-horarios,
+.footer-contato {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-arena-inf a,
+.footer-horarios a,
+.footer-horarios p,
+.footer-instagram {
+  margin: 0 0 9px;
+
+  color: #c5d2cc;
+  font-size: 12px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.footer-arena-inf a,
+.footer-horarios a,
+.footer-instagram {
+  transition: color 0.2s ease;
+}
+
+.footer-arena-inf a:hover,
+.footer-horarios a:hover,
+.footer-instagram:hover,
+.footer-copyright a:hover {
+  color: #d9f56a;
+}
+
+.footer-horarios p {
+  margin-bottom: 8px;
+}
+
+/* Instagram */
+.footer-instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.instagram-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 17px;
+  height: 17px;
+
+  color: #c5d2cc;
+  font-size: 23px;
+  line-height: 1;
+}
+
+.footer-disclaimer {
+  margin-top: 1px;
+  color: #a9bdb4;
+  font-size: 9px;
+}
+
+/* Linha inferior */
+.footer-copyright {
+  width: 100%;
+  max-width: 1105px;
+  margin: 0 auto;
+  padding-top: 32px;
+
+  border-top: 1px solid rgb(197 210 204 / 17%);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-copyright p {
+  margin: 0;
+  color: #b6c6be;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.footer-copyright .links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.footer-copyright a {
+  color: #b6c6be;
+  font-size: 10px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  .footer {
+    padding: 38px 5% 22px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1.4fr 1fr;
+    column-gap: 36px;
+    row-gap: 32px;
+  }
+
+  .footer-copyright {
+    padding-top: 24px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 550px) {
+  .footer {
+    padding: 32px 6% 22px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 30px;
+  }
+
+  .footer-logo {
+    grid-column: 1 / -1;
+  }
+
+  .footer-brand {
+    font-size: 20px;
+  }
+
+  .footer-logo p {
+    margin-top: 12px;
+    font-size: 13px;
+  }
+
+  .footer-content h3 {
+    font-size: 10px;
+  }
+
+  .footer-arena-inf a,
+  .footer-horarios a,
+  .footer-horarios p,
+  .footer-instagram {
+    font-size: 11px;
+    overflow-wrap: anywhere;
+  }
+
+  .footer-copyright {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer-copyright p {
+    font-size: 10px;
+  }
+
+  .footer-copyright .links {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 350px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-logo {
+    grid-column: auto;
+  }
+}

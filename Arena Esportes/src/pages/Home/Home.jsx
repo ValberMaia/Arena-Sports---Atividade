@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import './Home.css';
 import Header from '../../components/layout/Header';
+import Footer from '../../components/layout/Footer';
 
 
 const Home = () => {
@@ -38,6 +39,8 @@ const Home = () => {
 
       <Link to="/cadastro">Cadastre-se</Link>
     </main>
+
+    <Footer />
   </div>
 );
 }
