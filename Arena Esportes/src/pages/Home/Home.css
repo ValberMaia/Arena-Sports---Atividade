@@ -1,0 +1,103 @@
+/* ========================================
+   TABUSPORTS — PÁGINA INICIAL
+   Arquivo: src/pages/Home/Home.css
+======================================== */
+
+.home-page {
+  min-height: 100vh;
+  background-color: var(--color-background);
+  padding-top: 104px;
+
+}
+
+/* Área principal */
+.home-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  width: min(1200px, calc(100% - 48px));
+  min-height: 480px;
+  margin-inline: auto;
+  padding: 80px 0;
+}
+
+/* Título de apresentação */
+.home-main h1 {
+  max-width: 800px;
+  margin-bottom: 24px;
+
+  color: var(--color-primary);
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+}
+
+/* Descrição */
+.home-main p {
+  max-width: 540px;
+  margin-bottom: 32px;
+
+  color: var(--color-text-light);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.8;
+}
+
+/* Link de cadastro */
+.home-main > a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 52px;
+  padding: 14px 28px;
+
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-pill);
+
+  background-color: var(--color-accent);
+  color: var(--color-primary-dark);
+
+  font-size: 15px;
+  font-weight: 800;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.home-main > a:hover {
+  background-color: #c8e654;
+  box-shadow: var(--shadow-soft);
+  transform: translateY(-2px);
+}
+
+.home-main > a:active {
+  transform: translateY(0);
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+  .home-main {
+    width: calc(100% - 32px);
+    min-height: 400px;
+    padding: 64px 0;
+  }
+
+  .home-main h1 {
+    margin-bottom: 18px;
+  }
+
+  .home-main p {
+    margin-bottom: 26px;
+    line-height: 1.7;
+  }
+
+  .home-main > a {
+    width: 100%;
+    max-width: 320px;
+  }
+}

@@ -1,0 +1,180 @@
+
+/* Contém as duas partes do header */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  transition: box-shadow 0.3s ease;
+}
+
+/* Faixa verde superior */
+.mine-header {
+  height: 24px;
+  padding: 14px 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-align: center;
+  text-transform: uppercase;
+
+  overflow: hidden;
+  transition:
+    height 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.mine-header p,
+.mine-header span {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 9px;
+}
+
+/* Barra branca principal */
+.header {
+  min-height: 80px;
+  padding: 0 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  background-color: #f5f1e8;
+  border-bottom: 1px solid var(--color-border);
+
+  transition: min-height 0.3s ease;
+}
+
+/* Logo */
+.header-logo img {
+  display: block;
+  width: 160px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Links */
+.header-menu ul {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-menu a {
+  color: #173d32;
+  text-decoration: none;
+  font-size: 14px;
+  transition: opacity 0.2s ease;
+}
+
+.header-menu a:hover {
+  opacity: 0.65;
+}
+
+/* Botões */
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  min-height: 44px;
+  padding: 0 20px;
+
+  border: 0;
+  border-radius: 6px;
+
+  background: transparent;
+  color: #173d32;
+  text-decoration: none;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.header-buttons .header-button:last-child {
+  background: #173d32;
+  color: #ffffff;
+}
+
+/* Estado após rolar a página */
+.site-header.is-scrolled {
+  box-shadow: 0 4px 14px rgb(0 0 0 / 8%);
+}
+
+.site-header.is-scrolled .mine-header {
+  height: 0;
+  opacity: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.site-header.is-scrolled .header {
+  min-height: 72px;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 850px) {
+  .header {
+    padding: 0 4%;
+    gap: 14px;
+  }
+
+  .header-menu ul {
+    gap: 14px;
+  }
+
+  .header-logo img {
+    width: 135px;
+  }
+}
+
+@media (max-width: 650px) {
+  .header {
+    min-height: 68px;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px 4%;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .header-logo img {
+    width: 125px;
+  }
+
+  .header-button {
+    min-height: 40px;
+    padding: 0 12px;
+  }
+
+  .site-header.is-scrolled .header {
+    min-height: 64px;
+  }
+}
