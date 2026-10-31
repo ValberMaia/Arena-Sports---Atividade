@@ -1,15 +1,13 @@
-import { Link } from 'react-router-dom';
+import Header from '../../components/layout/Header';
+import Footer from '../../components/layout/Footer';
+import './Register.css';
 
 const Register = () => {
   return (
-    <main>
-        <h1>Cadastro</h1>
-        <p>Preencha os dados para se cadastrar.</p>
-
-        <Link to="/">
-            Voltar para a página inicial
-        </Link>
-    </main>
+    <div className="register-page">
+      <Header />
+      <Footer />
+    </div>
   )
 }
 
