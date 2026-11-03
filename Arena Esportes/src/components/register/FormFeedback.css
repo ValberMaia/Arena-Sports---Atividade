@@ -1,0 +1,27 @@
+
+.form-feedback {
+  width: 100%;
+  padding: 11px 13px;
+  border-radius: 5px;
+
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.form-feedback.success {
+  border: 1px solid #b9d8bd;
+  background-color: #edf7ee;
+  color: #27643a;
+}
+
+.form-feedback.error {
+  border: 1px solid #e7c2bd;
+  background-color: #fff0ed;
+  color: #a33e32;
+}
+
+.form-feedback.warning {
+  border: 1px solid #ead9a7;
+  background-color: #fff8e6;
+  color: #80621d;
+}

@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
-const Header = () => {
+const Header = ({ currentPage = 'PÁGINA INICIAL' }) => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -32,7 +32,7 @@ const Header = () => {
     <div className={`site-header ${scrolled ? 'is-scrolled' : ''}`}>
       <div className="mine-header">
         <p>AREIA, ESPORTE E ENCONTRO • TABULEIRO DO NORTE, CE</p>
-        <span>PÁGINA INICIAL</span>
+        <span>{currentPage}</span>
       </div>
 
       <div className="header">

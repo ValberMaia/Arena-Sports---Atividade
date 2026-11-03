@@ -1,0 +1,31 @@
+.privacy-notice {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+
+  background-color: #f4f1e8;
+  border-radius: 5px;
+}
+
+.privacy-notice img {
+  display: block;
+  width: 13px;
+  height: 13px;
+  margin-top: 1px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.privacy-notice p {
+  margin: 0;
+
+  color: #78847c;
+  font-family: inherit;
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 1.5;
+}

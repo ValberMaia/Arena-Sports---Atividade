@@ -7,7 +7,7 @@ import Footer from '../../components/layout/Footer';
 const Home = () => {
   return (
   <div className="home-page">
-    <Header />
+    <Header currentPage="PÁGINA INICIAL" />
 
     <main className="home-main">
       <h1>Bem-vindo à TabuSports</h1>

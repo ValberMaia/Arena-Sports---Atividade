@@ -1,11 +1,17 @@
-import React from 'react'
+import './FormFeedback.css'
 
-const FormFeedback = () => {
+
+const FormFeedback = ({ type, message }) => {
+  if (!message) {
+    return null;
+  }
+
   return (
-    <div>
-      
+    <div className={`form-feedback ${type}`} role="status">
+      {message}
     </div>
-  )
-}
+  );
+};
 
-export default FormFeedback
+export default FormFeedback;
+

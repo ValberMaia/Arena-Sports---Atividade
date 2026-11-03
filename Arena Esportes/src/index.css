@@ -3,6 +3,8 @@
    Arquivo: src/index.css
 ======================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap');
+
 /* 1. Identidade visual */
 :root {
   font-family: Arial, Helvetica, sans-serif;
@@ -143,6 +145,21 @@ button {
 ::selection {
   color: var(--color-primary-dark);
   background-color: var(--color-accent);
+}
+
+:root {
+  --font-heading: 'Oswald', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
 }
 
 /* 7. Adaptação para dispositivos móveis */
