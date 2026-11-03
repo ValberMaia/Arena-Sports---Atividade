@@ -1,6 +1,6 @@
-
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import Logo from '../common/Logo';
+import Button from '../common/Button';
 import './Header.css';
 
 const Header = ({ currentPage = 'PÁGINA INICIAL' }) => {
@@ -13,7 +13,6 @@ const Header = ({ currentPage = 'PÁGINA INICIAL' }) => {
 
     window.addEventListener('scroll', handleScroll);
 
-    // Verifica também se a página já abriu rolada
     handleScroll();
 
     return () => {
@@ -37,7 +36,7 @@ const Header = ({ currentPage = 'PÁGINA INICIAL' }) => {
 
       <div className="header">
         <div className="header-logo">
-          <img src="/images/logo.png" alt="Logo TabuSports" />
+          <Logo width={145} />
         </div>
 
         <nav className="header-menu">
@@ -51,11 +50,13 @@ const Header = ({ currentPage = 'PÁGINA INICIAL' }) => {
         </nav>
 
         <div className="header-buttons">
-          <button className="header-button">Entrar</button>
+          <Button variant="text" to="/login">
+            Entrar
+          </Button>
 
-          <Link to="/cadastro" className="header-button">
-            Cadastre-se <span aria-hidden="true">↗</span>
-          </Link>
+          <Button variant="primary" arrow to="/cadastro">
+            Cadastre-se
+          </Button>
         </div>
       </div>
     </div>

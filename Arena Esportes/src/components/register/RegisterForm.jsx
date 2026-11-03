@@ -6,6 +6,7 @@ import PasswordField from './PasswordField';
 import SportSelect from './SportSelect';
 import FormFeedback from './FormFeedback';
 import PrivacyNotice from './PrivacyNotice';
+import Button from '../common/Button';
 
 const RegisterForm = () => {
   const [formData, setFormData] = useState({
@@ -209,9 +210,14 @@ const RegisterForm = () => {
           message={feedback.message}
         />
 
-        <button type="submit" className="register-submit">
-          Criar minha conta <span aria-hidden="true">↗</span>
-        </button>
+        <Button
+          variant="primary"
+          arrow
+          type="submit"
+          className="register-submit"
+        >
+          Criar minha conta
+        </Button>
 
         <PrivacyNotice />
 

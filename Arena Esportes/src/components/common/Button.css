@@ -1,0 +1,96 @@
+.button {
+  min-height: 42px;
+  padding: 0 18px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  border: 1px solid transparent;
+  border-radius: 5px;
+
+  font-family: var(--font-body, 'DM Sans', sans-serif);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.button-arrow {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.button:hover .button-arrow {
+  transform: translate(2px, -2px);
+}
+
+/* Verde preenchido */
+.button-primary {
+  background-color: #173d32;
+  border-color: #173d32;
+  color: #fffefa;
+}
+
+.button-primary:hover {
+  background-color: #245746;
+  border-color: #245746;
+}
+
+/* Fundo claro com borda */
+.button-outline {
+  background-color: transparent;
+  border-color: #8b9b8f;
+  color: #173d32;
+}
+
+.button-outline:hover {
+  background-color: #e9eddf;
+  border-color: #173d32;
+}
+
+/* Texto simples */
+.button-text {
+  min-height: 38px;
+  padding: 0 8px;
+
+  background-color: transparent;
+  border-color: transparent;
+  color: #173d32;
+}
+
+.button-text:hover {
+  color: #5d7967;
+}
+
+/* Estados */
+.button:focus-visible {
+  outline: 2px solid #b8dc4b;
+  outline-offset: 3px;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .button {
+    min-height: 40px;
+    padding: 0 14px;
+  }
+}
