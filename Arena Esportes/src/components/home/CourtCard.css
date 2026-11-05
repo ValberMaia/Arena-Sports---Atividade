@@ -1,12 +1,12 @@
-.court-card { min-height: 190px; padding: 18px; border-radius: 5px; background: #e9eddf; color: #173d32; }
-.court-card-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 13px; }
-.court-card-top > img { width: 19px; height: 19px; object-fit: contain; }
-.court-diagram { position: relative; width: 72px; height: 43px; border: 1px solid #688477; padding: 5px; }
-.court-diagram::before { content: ''; position: absolute; inset: 5px 50%; border-left: 1px solid #688477; }
-.court-diagram::after { content: ''; position: absolute; inset: 5px 5px; border: 1px solid #688477; }
-.court-diagram span { position: absolute; z-index: 1; top: 9px; right: 12px; width: 5px; height: 5px; border-radius: 50%; background: #e36b45; }
-.court-card h3 { margin: 0 0 4px; font-family: var(--font-heading, 'Oswald', sans-serif); font-size: 22px; font-weight: 400; text-transform: uppercase; }
-.court-card > strong { display: block; font-size: 10px; }
-.court-card p { margin: 5px 0 12px; color: #718078; font-size: 9px; }
-.court-card-feature { display: flex; align-items: center; gap: 5px; color: #68796f; font-size: 9px; }
-.court-card-feature img { width: 11px; height: 11px; }
+.court-card{min-height:205px;padding:20px;border-radius:5px;background:#e9eddf;color:#173d32}
+.court-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.court-card-top>img{width:21px;height:21px;object-fit:contain}
+.court-diagram{position:relative;width:72px;height:43px;border:1px solid #688477;padding:5px;flex:0 0 72px}
+.court-diagram::before{content:'';position:absolute;inset:5px 50%;border-left:1px solid #688477}
+.court-diagram::after{content:'';position:absolute;inset:5px;border:1px solid #688477}
+.court-diagram span{position:absolute;z-index:1;top:9px;right:12px;width:5px;height:5px;border-radius:50%;background:#e36b45}
+.court-card h3{margin:0 0 5px;font-family:var(--font-heading,'Oswald',sans-serif);font-size:23px;font-weight:500;line-height:1.2;text-transform:uppercase}
+.court-card>strong{display:block;font-size:13px;font-weight:600;line-height:1.4}
+.court-card p{margin:7px 0 14px;color:#68786f;font-size:12px;line-height:1.45}
+.court-card-feature{display:flex;align-items:center;gap:7px;color:#617369;font-size:12px;line-height:1.4}
+.court-card-feature img{width:14px;height:14px;flex:0 0 14px;object-fit:contain}

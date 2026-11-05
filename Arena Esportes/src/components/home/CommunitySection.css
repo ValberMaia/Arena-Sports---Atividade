@@ -1,10 +1,10 @@
-.community-section { padding: 52px 5%; background: #e9eddf; }
-.community-section-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(30px, 6vw, 76px); }
-.community-copy h2 { margin: 0 0 14px; color: #173d32; font-family: var(--font-heading, 'Oswald', sans-serif); font-size: clamp(30px, 3.3vw, 43px); font-weight: 600; line-height: 1.12; text-transform: uppercase; }
-.community-copy p { margin: 0 0 18px; color: #78847c; font-size: 11px; line-height: 1.7; }
-.community-copy ul { display: grid; gap: 10px; margin: 0 0 18px; padding: 0; list-style: none; }
-.community-copy li { display: flex; align-items: center; gap: 9px; color: #52665b; font-size: 10px; }
-.community-copy li img { width: 14px; height: 14px; }
-.community-copy > strong { color: #d96843; font-family: var(--font-heading, 'Oswald', sans-serif); font-size: 17px; font-weight: 500; text-transform: uppercase; }
-.community-image { width: 100%; height: clamp(240px, 25vw, 340px); display: block; object-fit: cover; border-radius: 4px; }
-@media (max-width: 760px) { .community-section-inner { grid-template-columns: 1fr; } }
+.community-section{padding:64px 5%;background:#e9eddf}
+.community-section-inner{width:100%;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:clamp(36px,6vw,76px)}
+.community-copy h2{max-width:590px;margin:0 0 17px;color:#173d32;font-family:var(--font-heading,'Oswald',sans-serif);font-size:clamp(32px,3.2vw,43px);font-weight:600;line-height:1.12;text-transform:uppercase}
+.community-copy p{max-width:570px;margin:0 0 21px;color:#65756c;font-size:15px;line-height:1.65}
+.community-copy ul{display:grid;gap:13px;margin:0 0 22px;padding:0;list-style:none}
+.community-copy li{display:flex;align-items:flex-start;gap:10px;color:#52665b;font-size:14px;line-height:1.45}
+.community-copy li img{width:17px;height:17px;flex:0 0 17px;object-fit:contain;margin-top:1px}
+.community-copy>strong{display:block;color:#d96843;font-family:var(--font-heading,'Oswald',sans-serif);font-size:19px;font-weight:600;line-height:1.3;text-transform:uppercase}
+.community-image{width:100%;height:auto;aspect-ratio:1.48/1;max-height:390px;display:block;object-fit:cover;object-position:center;border-radius:5px}
+@media(max-width:800px){.community-section{padding:48px 5%}.community-section-inner{grid-template-columns:1fr;gap:28px}.community-image{aspect-ratio:16/10;max-height:360px}}

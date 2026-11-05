@@ -1,6 +1,7 @@
-.final-cta { padding: 38px 5%; background: #d9f36a; }
-.final-cta-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 25px; }
-.final-cta h2 { max-width: 650px; margin: 0 0 8px; color: #173d32; font-family: var(--font-heading, 'Oswald', sans-serif); font-size: clamp(32px, 4vw, 48px); font-weight: 600; line-height: 1.08; text-transform: uppercase; }
-.final-cta p { margin: 0; color: #52665b; font-size: 11px; }
-.final-cta .button-primary { background: #173d32; border-color: #173d32; }
-@media (max-width: 650px) { .final-cta-inner { align-items: flex-start; flex-direction: column; } }
+.final-cta{padding:46px 5%;background:#d9f36a}
+.final-cta-inner{width:100%;max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:36px}
+.final-cta-inner>div{min-width:0;max-width:680px}
+.final-cta h2{max-width:680px;margin:0 0 9px;color:#173d32;font-family:var(--font-heading,'Oswald',sans-serif);font-size:clamp(34px,3.5vw,46px);font-weight:600;line-height:1.08;text-transform:uppercase}
+.final-cta p{margin:0;color:#52665b;font-size:13px;line-height:1.5}
+.final-cta .button-primary{flex:0 0 auto;background:#173d32;border-color:#173d32}
+@media(max-width:700px){.final-cta{padding:38px 5%}.final-cta-inner{align-items:flex-start;flex-direction:column;gap:22px}.final-cta h2{font-size:clamp(30px,8vw,40px)}}

@@ -36,7 +36,7 @@ const Footer = () => {
           <p>Seg–sex: 06h às 23h</p>
           <p>Sáb–dom: 07h às 22h</p>
 
-          <a href="mailto:oi@tabusports.example">
+          <a href="mailto:tabusportsarena@gmail.com">
             tabusportsarena@gmail.com
           </a>
         </div>

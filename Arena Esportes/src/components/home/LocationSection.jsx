@@ -8,10 +8,18 @@ const LocationSection = () => (
         <h2>Seu ponto de encontro em Tabuleiro do Norte.</h2>
         <ul>
           <li><img src="/images/icons/map-pin.svg" alt="" /><span><strong>Tabuleiro do Norte, CE</strong><br />Rua do Arco, 120 • endereço fictício</span></li>
-          <li><span className="location-symbol">◉</span><span><strong>(88) 90000-2026</strong><br />oi@tabusports.example</span></li>
-          <li><span className="location-symbol">◷</span><span>Seg–sex: 06h às 23h • Sáb–dom: 07h às 22h</span></li>
+          <li>
+            <img src="/images/icons/user.svg" alt="" />
+            <span>
+              <strong>(88) 90000-2026</strong><br />
+              <a href="mailto:tabusportsarena@gmail.com">
+                tabusportsarena@gmail.com
+              </a>
+            </span>
+          </li>
+          <li><img src="/images/icons/clock.svg" alt="" /><span>Seg–sex: 06h às 23h • Sáb–dom: 07h às 22h</span></li>
         </ul>
-        <Button variant="outline" arrow href="mailto:oi@tabusports.example">Vamos conversar</Button>
+        <Button variant="outline" arrow href="mailto:tabusportsarena@gmail.com">Vamos conversar</Button>
       </div>
       <div className="location-map" role="img" aria-label="Mapa ilustrativo indicando a localização da TabuSports em Tabuleiro do Norte">
         <div className="map-block map-block-one" />
