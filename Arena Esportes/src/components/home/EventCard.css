@@ -1,0 +1,9 @@
+.event-card { display: flex; gap: 15px; padding: 14px 0; border-top: 1px solid #e5e3d9; }
+.event-date { width: 48px; height: 58px; flex: 0 0 48px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 4px; background: #f4e6d9; color: #d96843; }
+.event-date strong { font-family: var(--font-heading, 'Oswald', sans-serif); font-size: 24px; font-weight: 500; line-height: 1; }
+.event-date span { margin-top: 3px; font-size: 9px; text-transform: uppercase; }
+.event-card-content { min-width: 0; }
+.event-card-content small { color: #879087; font-size: 9px; }
+.event-card-content h3 { margin: 5px 0; color: #173d32; font-family: var(--font-heading, 'Oswald', sans-serif); font-size: 18px; font-weight: 400; text-transform: uppercase; }
+.event-card-content p { margin: 0 0 5px; color: #78847c; font-size: 10px; line-height: 1.45; }
+.event-sport { color: #173d32; font-size: 9px; }

@@ -1,0 +1,8 @@
+.sport-card { min-width: 0; }
+.sport-card-image-link { display: block; height: clamp(150px, 18vw, 225px); overflow: hidden; border-radius: 5px; background: #e3e8dc; }
+.sport-card img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform .35s ease; }
+.sport-card-image-link:hover img { transform: scale(1.04); }
+.sport-card-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 12px; }
+.sport-card h3 { margin: 0; color: #173d32; font-family: var(--font-heading, 'Oswald', sans-serif); font-size: 22px; font-weight: 400; text-transform: uppercase; }
+.sport-card-arrow { color: #173d32; text-decoration: none; font-size: 17px; }
+.sport-card p { margin: 7px 0 0; color: #78847c; font-size: 11px; line-height: 1.6; }

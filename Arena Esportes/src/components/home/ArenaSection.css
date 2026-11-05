@@ -1,0 +1,12 @@
+.arena-section { padding: 48px 5%; background: #123e32; color: #f5f1e8; }
+.arena-section-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); align-items: center; gap: clamp(30px, 5vw, 64px); }
+.arena-section-image { width: 100%; height: clamp(250px, 27vw, 370px); display: block; object-fit: cover; border-radius: 4px; }
+.arena-section .section-title-heading { color: #fffefa; }
+.arena-section-intro { margin: 14px 0 24px; color: #c4d0c8; font-size: 12px; line-height: 1.65; }
+.arena-features { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px 24px; }
+.arena-feature { display: flex; align-items: flex-start; gap: 10px; }
+.arena-feature img { width: 17px; height: 17px; object-fit: contain; }
+.arena-feature div { display: flex; flex-direction: column; gap: 5px; }
+.arena-feature strong { color: #fff; font-size: 11px; font-weight: 600; }
+.arena-feature span { color: #b7c8bd; font-size: 10px; line-height: 1.5; }
+@media (max-width: 760px) { .arena-section-inner { grid-template-columns: 1fr; } .arena-features { gap: 18px 12px; } }

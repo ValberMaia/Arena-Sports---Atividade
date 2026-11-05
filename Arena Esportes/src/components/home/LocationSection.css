@@ -1,0 +1,17 @@
+.location-section { padding: 54px 5%; background: var(--color-background, #f5f1e8); }
+.location-section-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(30px, 6vw, 70px); }
+.location-copy h2 { max-width: 470px; margin: 0 0 18px; color: #173d32; font-family: var(--font-heading, 'Oswald', sans-serif); font-size: clamp(30px, 3.4vw, 43px); font-weight: 600; line-height: 1.12; text-transform: uppercase; }
+.location-copy ul { display: grid; gap: 13px; margin: 0 0 20px; padding: 0; list-style: none; }
+.location-copy li { display: flex; align-items: flex-start; gap: 10px; color: #78847c; font-size: 10px; line-height: 1.6; }
+.location-copy li img, .location-symbol { width: 15px; height: 15px; flex: 0 0 15px; color: #173d32; }
+.location-copy li strong { color: #173d32; font-weight: 600; }
+.location-map { position: relative; min-height: 250px; overflow: hidden; border-radius: 5px; background: #e8eddf; }
+.location-map::before, .location-map::after { content: ''; position: absolute; background: #f8f6ef; }
+.location-map::before { top: -30%; left: 35%; width: 18px; height: 160%; transform: rotate(12deg); }
+.location-map::after { top: 48%; left: -10%; width: 120%; height: 17px; transform: rotate(-8deg); }
+.map-block { position: absolute; width: 25%; height: 28%; border-radius: 5px; background: #d4dec8; }
+.map-block-one { top: 8%; left: 5%; }.map-block-two { top: 8%; right: 5%; }.map-block-three { bottom: 8%; left: 5%; }
+.map-label { position: absolute; z-index: 2; top: 42%; left: 50%; transform: translate(-50%, -50%); padding: 7px 12px; border-radius: 3px; background: #173d32; color: white; font-size: 10px; }
+.map-pin { position: absolute; z-index: 2; top: 57%; left: 50%; width: 22px; height: 22px; transform: translateX(-50%); }
+.map-caption { position: absolute; z-index: 2; top: 73%; left: 50%; transform: translateX(-50%); color: #52665b; font-size: 9px; white-space: nowrap; }
+@media (max-width: 760px) { .location-section-inner { grid-template-columns: 1fr; } .location-map { min-height: 220px; } }
